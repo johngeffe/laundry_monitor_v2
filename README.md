@@ -12,13 +12,16 @@ http://nodered.org/docs/hardware/raspberrypi.html
  
 Adafruit Feather Huzzah ESP8266
  * https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview
+LISH3DH 3 axis sensor
  * #1 (washer)LIS3DH I2C Address default 0x18
- * https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/overview
+https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/overview
  * #2 (dryer) LIS3DH > Wiring 3.3v to SDO pin to change address to 0x19
- * SDO - When in I2C mode, this pin can be used for address selection. 
+ --> SDO - When in I2C mode, this pin can be used for address selection. 
  --> When connected to GND or left open, the address is 0x18
  --> it can also be connected to 3.3V to set the address to 0x19 <--
+ Wiring:
  * Wire the following from the Feather {3v, GND, SLC, SLA} to both LIS3DH modules in parallel.
+ Consult the pinout guides!
 
 I used doublesided tap to attach magnets to the LIS3DH sensors making this a completely portable and non-intrusive project.
 NOTE: This code is configured for I2C only.
