@@ -7,9 +7,16 @@ https://learn.adafruit.com/diy-esp8266-home-security-with-lua-and-mqtt/configuri
 
  * Node-red subscribes and publishes to MQTT server.
  * Node-red can do other IoT things like email or twitter.
+ * Node-red dashboard can be used to display status.  No need for LEDs or switches.
+https://github.com/node-red/node-red-dashboard
+
 >> I am running them in a Rasberry PI so they are almost always on
 http://nodered.org/docs/hardware/raspberrypi.html
- 
+
+* Detect when the cycle is done.
+* Reset to a new cycle if the machine is being unloaded >> depends on time delays.
+* Simplified code with "switch" "case" blocks.
+
 Adafruit Feather Huzzah ESP8266
  * https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview
 LISH3DH 3 axis sensor
@@ -25,7 +32,6 @@ https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/ov
 
 I used doublesided tap to attach magnets to the LIS3DH sensors making this a completely portable and non-intrusive project.
 NOTE: This code is configured for I2C only.
-
 
 Inspired by
 https://github.com/domiflichi/Launitor-Laundry-Monitor
