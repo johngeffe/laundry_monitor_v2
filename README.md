@@ -1,17 +1,17 @@
 # laundry_montitor_v2
 
-/*
+
  * General stratagy:
  * Feather uses MQTT PubSubClient to publish change of modes while Node-red handles notification (email etc).
  * to raspberry pi running MQTT.
- * https://learn.adafruit.com/diy-esp8266-home-security-with-lua-and-mqtt/configuring-mqtt-on-the-raspberry-pi
- * 
+https://learn.adafruit.com/diy-esp8266-home-security-with-lua-and-mqtt/configuring-mqtt-on-the-raspberry-pi
+
  * Node-red subscribes and publishes to MQTT server.
  * Node-red can do other IoT things like email or twitter.
- * 
+
  * >> I am running them in a Rasberry PI so they are almost always on 
- * http://nodered.org/docs/hardware/raspberrypi.html
- * 
+http://nodered.org/docs/hardware/raspberrypi.html
+ 
  * Adafruit Feather Huzzah ESP8266
  * https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview
  * #1 (washer)LIS3DH I2C Address default 0x18
@@ -21,14 +21,11 @@
  *   --> When connected to GND or left open, the address is 0x18
  *   --> it can also be connected to 3.3V to set the address to 0x19 <--
  * Wire the following from the Feather {3v, GND, SLC, SLA} to both LIS3DH modules in parallel.
- * 
+
  * I used doublesided tap to attach magnets to the LIS3DH sensors making this a completely
  * portable and non-intrusive project.
- * 
- * NOTE: This code is configured for I2C only.
- * 
- */
 
+ * NOTE: This code is configured for I2C only.
 
 
 Inspired by
